@@ -7,6 +7,7 @@
             <span class="head-text-main">Казахстан</span>
             <span class="head-text-second">улица Тестовая 1</span>
         </div>
+        <
         <div class="header-info">
             <div>
                 <span class="head-text-main">+7 (775) 000 00 01</span>

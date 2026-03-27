@@ -73,33 +73,16 @@ document.addEventListener('DOMContentLoaded', function() {
   initMobileMenu()
 
   selectItem({
+    selector: ".third-header button",
     active: "red-btn",
     inActive: "white-btn",
     value: "Сегодня"
   })
 
   selectItem({
+    selector: ".nav a",
     active: "active",
     inActive: "inActive",
     value: "Афиша"
-  })
-
-  const navLinks = document.querySelectorAll('.nav a')
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      if (this.getAttribute('href') !== '#') {
-        e.preventDefault()
-      }
-    })
-  })
-
-  const cards = document.querySelectorAll('.card')
-  cards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
-      this.style.transform = 'translateY(-5px)'
-    })
-    card.addEventListener('mouseleave', function() {
-      this.style.transform = 'translateY(0)'
-    })
   })
 })

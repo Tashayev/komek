@@ -1,15 +1,12 @@
-/**
- * @param {Object} config 
- * @param {string} config.selector
- * @param {string} config.active 
- * @param {string} config.inActive 
- * @param {string} config.value 
- */
+
 function selectItem({ selector, active, inActive, value }) {
   const items = document.querySelectorAll(selector)
 
+  if (items.length === 0) return
+
   items.forEach((item) => {
-    if (item.textContent === value) {
+    const text = item.textContent.trim()
+    if (text === value) {
       item.classList.add(active)
       if (inActive) item.classList.remove(inActive)
     } else {

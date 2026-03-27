@@ -1,0 +1,113 @@
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 37px;
+    padding: 20px 48px;
+    background-color: #fff;    
+}
+@media (max-width: 1240px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 960px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 660px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.card img{    
+    max-width: 267px;
+    margin-bottom: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 267px;
+}
+
+.movie-name{
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+.genre-container{
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.genre{
+    background-color: #F2F2F5;
+    color: #727276;
+    padding: 3px 4px;
+    font-size: 12px;
+}
+.hall-holder{
+    border: 1px solid #E92B43;
+    border-radius: 3px;
+    max-width: 66px;
+}
+.time{
+    background-color: #E92B43;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 0;
+}
+.hall-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+    font-size: 11px;
+    color: #4C4C4F;
+}
+
+.hall-container{
+    display: grid;
+    grid-template-columns: repeat(3, 68px);
+    gap: 10px;
+    text-align: center;
+}
+.hall-name{
+    color: #4C4C4F;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+}
+.not-found{
+    width: 265px;
+    height: 384px;
+    background-color: #123D4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.premiere{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #E92B43;
+    color: #fff;
+    font-weight: 500;
+    padding: 4px 8px;
+}
+.session-btn{
+    color: #fff;
+    background-color: #E92B43;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    max-width: 152px;
+}

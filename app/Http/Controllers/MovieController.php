@@ -15,28 +15,4 @@ class MovieController extends Controller
         return view('index');
     }
 
-    /**
-     * @return \Illuminate\View\View
-     */
-    public function sessions()
-    {
-        return view('sessions');
-    }
-
-    /**
-     * @return \Illuminate\View\View
-     */
-    public function cinema()
-    {
-        return view('cinema');
-    }
-
-    /**
-     * 
-     * @return \Illuminate\View\View
-     */
-    public function contacts()
-    {
-        return view('contacts');
-    }
 }

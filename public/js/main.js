@@ -73,14 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
   initMobileMenu()
 
   selectItem({
-    selector: ".third-header button",
     active: "red-btn",
     inActive: "white-btn",
     value: "Сегодня"
   })
 
   selectItem({
-    selector: ".nav a",
     active: "active",
     inActive: "inActive",
     value: "Афиша"

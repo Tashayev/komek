@@ -28,11 +28,15 @@
     max-width: 267px;
     margin-bottom: 10px;
 }
-.card{
+.card{  
     display: flex;
     flex-direction: column;
     position: relative;
     max-width: 267px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
 }
 
 .movie-name{
